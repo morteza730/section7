@@ -1,4 +1,4 @@
 Flask~=1.1.2
 flask_restful
-Flask-SQLAlchemy
+flask_sqlalchemy
 uwsgi
