@@ -3,4 +3,4 @@ flask_restful
 flask_sqlalchemy
 flask-jwt
 uwsgi
-psycopg2
+Psycopg2
