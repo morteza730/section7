@@ -8,7 +8,10 @@ from resourses.items import Item, ItemList
 from resourses.stores import Stores, StoreList
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')#, 'sqlite:///data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://sqwjfwhvaczgeu" \
+                                        ":5741a1980d0229d3d1c311bdaa42eab6920409e6c9a391e78ad0f3f5fcb16871@ec2-54-164" \
+                                        "-22-242.compute-1.amazonaws.com:5432/d396up6h1c6v6u"#os.environ.get(
+# 'DATABASE_URL')#, 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = "sadeghi"
 jwt = JWT(app, authentication, identify)  # /auth
